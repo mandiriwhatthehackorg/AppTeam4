@@ -22,6 +22,12 @@ public class PhoneNumberActivity extends AppCompatActivity {
 
         numberEditText = findViewById(R.id.number_ed);
 
+        Intent intent = getIntent();
+
+        if (intent.getStringExtra("phoneNumber") != null) {
+            numberEditText.setText(intent.getStringExtra("phoneNumber"));
+        }
+
         findViewById(R.id.send_otp).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

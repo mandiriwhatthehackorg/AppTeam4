@@ -3,8 +3,8 @@
     package="id.co.mandiri.onepushservices">
 
     <uses-permission android:name="android.permission.INTERNET" />
-
     <uses-permission android:name="android.permission.CAMERA" />
+
     <uses-feature android:name="android.hardware.camera" />
     <uses-feature android:name="android.hardware.camera.autofocus" />
 
@@ -16,9 +16,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ui.scanner.ScannerCardActivity">
-
-        </activity>
+        <activity android:name=".ui.manualinput.ManualInputActivity"></activity>
+        <activity android:name=".ui.scanner.ScannerCardActivity"></activity>
         <activity android:name=".ui.creditcard.BlockCreditCardActivity" />
         <activity android:name=".ui.onboarding.OnBoardingActivity">
             <intent-filter>
@@ -29,9 +28,7 @@
         </activity>
         <activity android:name=".ui.verification.VerifyOtpActivity" />
         <activity android:name=".ui.verification.PhoneNumberActivity" />
-        <activity android:name=".ui.home.HomeActivity">
-
-        </activity>
+        <activity android:name=".ui.home.HomeActivity"></activity>
         <activity android:name=".ui.creditcard.DashboardCreditCardActivity" />
         <activity android:name=".ui.MainActivity" />
     </application>

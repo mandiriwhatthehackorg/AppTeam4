@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.manualinput.ManualInputActivity"
+    android:background="#fff"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/top_background"
+        android:layout_gravity="center"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_mandiri"
+        android:layout_gravity="center"
+        android:layout_marginBottom="64dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Nomor Handphone Pemegang Kartu Kredit"/>
+
+        <EditText
+            android:id="@+id/phone_number_ed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Masukan nomor handphone"
+            android:padding="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="Tanggal Lahir"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:hint="Masukan tanggal lahir"
+            android:inputType="date"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="16dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/lanjutkan"
+                android:layout_width="315dp"
+                android:layout_height="40dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_blue"
+                android:text="Lanjutkan"
+                android:textColor="#fff"
+                android:layout_marginBottom="16dp"
+                android:layout_alignParentBottom="true"
+                android:layout_above="@+id/batalkan"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/batalkan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Batalkan"
+                android:textAlignment="center"
+                android:textColor="@color/blueButton"
+                android:layout_marginBottom="16dp"
+                android:textSize="14sp" />
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

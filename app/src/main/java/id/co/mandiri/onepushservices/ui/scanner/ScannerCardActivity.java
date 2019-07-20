@@ -10,12 +10,15 @@ import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.text.Html;
 import android.util.Log;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import id.co.mandiri.onepushservices.R;
+import id.co.mandiri.onepushservices.ui.manualinput.ManualInputActivity;
 import id.co.mandiri.onepushservices.ui.verification.PhoneNumberActivity;
 
 public class ScannerCardActivity extends AppCompatActivity {
@@ -51,6 +54,15 @@ public class ScannerCardActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ScannerCardActivity.this, PhoneNumberActivity.class));
+            }
+        });
+
+        TextView textView = findViewById(R.id.manual_input);
+        textView.setText(Html.fromHtml("<u>Masuk Secara Manual</u>"));
+        textView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ScannerCardActivity.this, ManualInputActivity.class));
             }
         });
     }
