@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:background="@color/background"
+        tools:context=".ui.creditcard.BlockCreditCardActivity">
+
+        <include
+            android:id="@+id/toolbar"
+            layout="@layout/toolbar" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center_horizontal"
+            android:background="#fff">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_marginTop="16dp"
+                android:text="Pemblokiran pada No. Kartu Kredit:" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="@color/blueText"
+                android:text="4895 9400 0000 0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_horizontal"
+            android:background="#fff">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:src="@drawable/platinum_card" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:textColor="@color/blueText"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="Prasetyo Nugraha" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:textStyle="bold"
+                android:layout_marginTop="16dp"
+                android:layout_marginLeft="16dp"
+                android:text="Surat Pernyataan" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:layout_margin="16dp"
+                android:text="Saya dengan ini memberikan instruksi kepada Mandiri untuk memblokir kartu kredit saya tersebut di atas. Atas pemblokiran Kartu Kredit Mandiri tersebut, saya setuju untuk dilakukan pencetakan Kartu Kredit Mandiri ulang dan bersedia dikenakan biaya pencetakan Kartu Kredit Mandiri sesuai dengan ketentuan yang berlaku di Bank Mandiri. Saya bertanggung jawab sepenuhnya atas pemblokiran Kartu Kredit Mandiri tersebut dan membebaskan Bank Mandiri dari segala tuntutan/gugatan dalam bentuk apapun dan dari siapapun." />
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:layout_margin="16dp"
+                android:text="Saya telah menyetujuji pernyataan diatas." />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#fff"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"
+                android:text="Pengiriman Kartu Pengganti"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pilih salah satu alamat yang Anda inginkan untuk mengirimkan kartu pengganti Kartu Kredit Mandiri."/>
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Jl. Dipati Ukur No.80, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132"
+                android:background="@drawable/corner_no_border"/>
+
+            <RadioButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="16dp"
+                android:text="Jl. Dago No.80-84, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132"
+                android:background="@drawable/corner_no_border"/>
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_blue"
+            android:textColor="#fff"
+            android:layout_margin="16dp"
+            android:text="Blokir Kartu"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+    </LinearLayout>
+
+</ScrollView>

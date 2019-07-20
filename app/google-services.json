@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "541818842295",
+    "firebase_url": "https://hackathonwth.firebaseio.com",
+    "project_id": "hackathonwth",
+    "storage_bucket": "hackathonwth.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:541818842295:android:273f7ecc7691533d",
+        "android_client_info": {
+          "package_name": "id.co.mandiri.onepushservices"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "541818842295-8i89rlsddarlftemcuc49c26b6io8t58.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "id.co.mandiri.onepushservices",
+            "certificate_hash": "014dd73ebad2d3063419fd052f2f24841b362994"
+          }
+        },
+        {
+          "client_id": "541818842295-a1v5h40gdi1ruuisu8a6adpa9fo2jhqs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBM_hZH64dlR6o3PijKo5AcKANL01RHSX0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "541818842295-a1v5h40gdi1ruuisu8a6adpa9fo2jhqs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

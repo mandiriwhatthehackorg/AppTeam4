@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#6AB2E2</color>
+    <color name="colorAccent">#D81B60</color>
+
+
+    <color name="blueText">#003D79</color>
+    <color name="blackText">#333333</color>
+    <color name="greyText">#9197A4</color>
+
+    <color name="greyLine">#EEEEEE</color>
+
+    <color name="blueButton">#6AB2E2</color>
+
+    <color name="backgroundScanner">#41454C</color>
+
+    <color name="background">#F7F7F7</color>
+</resources>

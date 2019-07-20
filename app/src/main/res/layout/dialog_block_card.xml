@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="16dp"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/corner_no_border">
+
+    <ImageView
+        android:layout_width="66dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginBottom="14dp"
+        android:src="@drawable/iv_block_credit_card"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/blackText"
+        android:textAlignment="center"
+        android:text="Data yang Anda berikan tidak sesuai, silahkan lakukan verifikasi ulang."
+        android:fontFamily="@font/myriad_pro_regular"
+        android:layout_marginBottom="30dp"/>
+
+    <Button
+        android:layout_width="273dp"
+        android:layout_height="40dp"
+        android:background="@drawable/button_blue"
+        android:textColor="#fff"
+        android:text="Ok"
+        android:layout_marginBottom="16dp"/>
+
+</LinearLayout>
