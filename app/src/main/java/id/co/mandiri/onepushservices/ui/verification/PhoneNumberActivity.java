@@ -22,10 +22,10 @@ public class PhoneNumberActivity extends AppCompatActivity {
 
         numberEditText = findViewById(R.id.number_ed);
 
-        Intent intent = getIntent();
+        String phonenumber = getIntent().getStringExtra("phonenumber");
 
-        if (intent.getStringExtra("phoneNumber") != null) {
-            numberEditText.setText(intent.getStringExtra("phoneNumber"));
+        if (phonenumber != null) {
+            numberEditText.setText(phonenumber);
         }
 
         findViewById(R.id.send_otp).setOnClickListener(new View.OnClickListener() {
@@ -35,7 +35,7 @@ public class PhoneNumberActivity extends AppCompatActivity {
 
                 String number = numberEditText.getText().toString().trim();
 
-                if (number.isEmpty() || number.length() < 10) {
+                if (number.isEmpty() || number.length() < 5) {
                     numberEditText.setError("Valid number is required");
                     numberEditText.requestFocus();
                     return;

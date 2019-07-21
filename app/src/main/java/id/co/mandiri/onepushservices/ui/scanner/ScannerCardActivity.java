@@ -105,7 +105,6 @@ public class ScannerCardActivity extends AppCompatActivity {
                 bitmap = Bitmap.createBitmap(bitmap, 0, 0, bitmap.getWidth(), bitmap.getHeight(), matrix, true);
                 Intent intent = new Intent(ScannerCardActivity.this, PhoneNumberActivity.class);
                 startActivity(intent);
-                finish();
             }
         };
     }

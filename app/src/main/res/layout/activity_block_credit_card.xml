@@ -133,14 +133,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="Jl. Dipati Ukur No.80, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132"
+                android:text="@string/alamat_rumah"
                 android:background="@drawable/corner_no_border"/>
 
             <RadioButton
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="16dp"
-                android:text="Jl. Dago No.80-84, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132"
+                android:text="@string/alamat_kantor"
                 android:background="@drawable/corner_no_border"/>
 
         </RadioGroup>

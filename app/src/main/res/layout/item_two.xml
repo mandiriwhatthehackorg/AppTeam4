@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp">
+
+        <!-- the circular icon on the left -->
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:src="@drawable/ic_clock"
+            android:tint="@android:color/white"
+            android:layout_marginRight="24dp"
+            android:padding="4dp"
+            android:background="@drawable/corner_grey"/>
+
+        <!-- the blue line -->
+        <FrameLayout
+            android:layout_width="15dp"
+            android:layout_height="match_parent"
+            android:padding="2dp"
+            android:background="@color/greyLine"
+            android:id="@+id/item_line">
+
+            <!-- the semi transparent circle on the line -->
+            <View
+                android:layout_width="11dp"
+                android:layout_height="11dp"
+                android:background="@drawable/corner_grey"/>
+
+        </FrameLayout>
+
+        <!-- views at the right of the blue line -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingLeft="24dp"
+            android:paddingBottom="32dp"
+            android:clickable="true"
+            android:background="?android:attr/selectableItemBackground">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                android:textSize="12sp"
+                android:fontFamily="@font/myriad_pro_regular"
+                android:id="@+id/item_title"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:text="Sedang dicetak"
+                android:id="@+id/item_subtitle"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">android-starter</string>
+    <string name="alamat_rumah"><b>Alamat Rumah</b> \n\nJl. Dipati Ukur No.80, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</string>
+    <string name="alamat_kantor"><b>Alamat Kantor</b> \n\nJl. Dago No.80-84, Lebakgede, Kecamatan Coblong, Kota Bandung, Jawa Barat 40132</string>
 </resources>

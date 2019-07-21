@@ -17,7 +17,8 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".ui.manualinput.ManualInputActivity"></activity>
-        <activity android:name=".ui.scanner.ScannerCardActivity"></activity>
+        <activity android:name=".ui.scanner.ScannerCardActivity"
+            android:parentActivityName=".ui.onboarding.OnBoardingActivity" />
         <activity android:name=".ui.creditcard.BlockCreditCardActivity" />
         <activity android:name=".ui.onboarding.OnBoardingActivity">
             <intent-filter>
@@ -29,7 +30,8 @@
         <activity android:name=".ui.verification.VerifyOtpActivity" />
         <activity android:name=".ui.verification.PhoneNumberActivity" />
         <activity android:name=".ui.home.HomeActivity"></activity>
-        <activity android:name=".ui.creditcard.DashboardCreditCardActivity" />
+        <activity android:name=".ui.creditcard.DashboardCreditCardActivity"
+            android:parentActivityName=".ui.onboarding.OnBoardingActivity"/>
         <activity android:name=".ui.MainActivity" />
     </application>
 
